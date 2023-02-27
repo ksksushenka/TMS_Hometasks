@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kgrebenyuk\\source\\repos\\TMS_Hometasks\\HelloWorld\\HelloWorld\\HelloWorld.csproj",
-      "projectName": "HelloWorld",
-      "projectPath": "C:\\Users\\kgrebenyuk\\source\\repos\\TMS_Hometasks\\HelloWorld\\HelloWorld\\HelloWorld.csproj",
+      "projectUniqueName": "C:\\Users\\kgrebenyuk\\source\\repos\\TMS_Hometasks\\HelloWorld\\HelloWorld\\TMS_Hometasks.csproj",
+      "projectName": "TMS_Hometasks",
+      "projectPath": "C:\\Users\\kgrebenyuk\\source\\repos\\TMS_Hometasks\\HelloWorld\\HelloWorld\\TMS_Hometasks.csproj",
       "packagesPath": "C:\\Users\\kgrebenyuk\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\kgrebenyuk\\source\\repos\\TMS_Hometasks\\HelloWorld\\HelloWorld\\obj\\",
       "projectStyle": "PackageReference",
