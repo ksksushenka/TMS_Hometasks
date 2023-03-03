@@ -6,7 +6,7 @@ namespace TMS_Hometasks
     {
         static void Main(string[] args)
         {
-            Hometask_Lesson3.Lesson3_Task1();
+            Hometask_Lesson4.Lesson4_Task3();
         }
     }
 }
