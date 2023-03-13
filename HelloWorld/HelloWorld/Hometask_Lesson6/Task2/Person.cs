@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TMS_Hometasks
+namespace TMS_Hometasks.Hometask_Lesson6.Task2
 {
     internal class Person
     {

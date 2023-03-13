@@ -1,4 +1,6 @@
 ﻿using System;
+using TMS_Hometasks.Hometask_Lesson6.Task1;
+using TMS_Hometasks.Hometask_Lesson6.Task2;
 
 namespace TMS_Hometasks
 {
