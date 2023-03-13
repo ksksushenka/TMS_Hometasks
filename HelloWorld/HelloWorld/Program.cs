@@ -1,6 +1,8 @@
 ﻿using System;
 using TMS_Hometasks.Hometask_Lesson6.Task1;
 using TMS_Hometasks.Hometask_Lesson6.Task2;
+using TMS_Hometasks.Hometask_Lesson7.Transport;
+using TMS_Hometasks.Hometask_Lesson7.Auto;
 
 namespace TMS_Hometasks
 {
@@ -52,34 +54,99 @@ namespace TMS_Hometasks
 
             //Hometask1_Lesson6
 
-            Figure figure1 = new FigureBuilder().CreateTriangle(3, 4, 5);
-            Figure figure2 = new FigureBuilder().CreateTriangle(4, 4, 5);
-            Figure figure3 = new FigureBuilder().CreateTriangle(5, 5, 5);
-            Figure figure4 = new FigureBuilder().CreateTriangle(4, 2, 3);
-            Figure figure5 = new FigureBuilder().CreateRectangle(2, 3);
-            Figure figure6 = new FigureBuilder().CreateRectangle(3, 3);
+            //Figure figure1 = new FigureBuilder().CreateTriangle(3, 4, 5);
+            //Figure figure2 = new FigureBuilder().CreateTriangle(4, 4, 5);
+            //Figure figure3 = new FigureBuilder().CreateTriangle(5, 5, 5);
+            //Figure figure4 = new FigureBuilder().CreateTriangle(4, 2, 3);
+            //Figure figure5 = new FigureBuilder().CreateRectangle(2, 3);
+            //Figure figure6 = new FigureBuilder().CreateRectangle(3, 3);
 
-            Console.WriteLine(figure1.GetSquare());
-            Console.WriteLine(figure2.GetSquare());
-            Console.WriteLine(figure3.GetSquare());
-            Console.WriteLine(figure4.GetSquare());
-            Console.WriteLine(figure5.GetSquare());
-            Console.WriteLine(figure6.GetSquare());
-            Console.WriteLine("\n");
+            //Console.WriteLine(figure1.GetSquare());
+            //Console.WriteLine(figure2.GetSquare());
+            //Console.WriteLine(figure3.GetSquare());
+            //Console.WriteLine(figure4.GetSquare());
+            //Console.WriteLine(figure5.GetSquare());
+            //Console.WriteLine(figure6.GetSquare());
+            //Console.WriteLine("\n");
 
-            var figures = new Figure[] {figure1, figure2, figure3, figure4, figure5, figure6};
+            //var figures = new Figure[] {figure1, figure2, figure3, figure4, figure5, figure6};
 
-            foreach (var figure in figures)
+            //foreach (var figure in figures)
+            //{
+            //    Console.WriteLine(figure.GetSquare());
+            //}
+
+            ////Hometask2_Lesson6
+
+            //Person patient = new Patient("Alex", "Ivanov", "patient");
+            //Person doctor = new TreatmentPlan().GetTreatmentPlan("Ivan", "Petrov", "surgeon", 1);
+
+            //Console.WriteLine($"{patient.firstName} {patient.lastName} your doctor is {doctor.post} {doctor.firstName} {doctor.lastName}. {doctor.Treatment()}");
+
+            //Lesson7_task3
+            Transport bus = new Bus("kamenka", 1, "22:30", 20);
+            Transport tram = new Tram("malinovka", 20, "20:00", 35);
+            Transport trolleybus = new Trolleybus("momo", 123, "15:33", 44);
+            Transport undeground = new Underground("oktyabrskaya", 70, "23:59", 101);
+
+            var transports = new Transport[] { bus, tram, trolleybus, undeground };
+
+            foreach (var transport in transports)
             {
-                Console.WriteLine(figure.GetSquare());
+                transport.GetInfo();
             }
 
-            //Hometask2_Lesson6
+            Console.WriteLine("\nEnter your destination.");
+            string clientDestination = Console.ReadLine();
 
-            Person patient = new Patient("Alex", "Ivanov", "patient");
-            Person doctor = new TreatmentPlan().GetTreatmentPlan("Ivan", "Petrov", "surgeon", 1);
+            foreach (var transport in transports)
+            {
+                if (clientDestination == transport.Destination)
+                {
+                    transport.GetInfo();
+                }
+            }
 
-            Console.WriteLine($"{patient.firstName} {patient.lastName} your doctor is {doctor.post} {doctor.firstName} {doctor.lastName}. {doctor.Treatment()}");
+            Console.WriteLine("\nEnter the time of departure of the transport in format hh:mm.");
+            DateTime clientTimeOfTransport = DateTime.Parse(Console.ReadLine());
+
+            foreach (var transport in transports)
+            {
+                DateTime timeOfTransport = DateTime.Parse(transport.TimeOfTransport);
+                if (timeOfTransport >= clientTimeOfTransport)
+                {
+                    transport.GetInfo();
+                }
+            }
+
+            bus.PrintTransportType(bus);
+            tram.PrintTransportType(tram);
+            trolleybus.PrintTransportType(trolleybus);
+            undeground.PrintTransportType(undeground);
+
+            //Lesson7_task4
+
+            Auto car = new Car("Mini Cooper", "1234 KK-3", 300, 1650);
+            Auto motorbike = new Motorbike("Harley Davidson", "0001 AA-7", 250, 1250, true);
+            Auto lorry = new Lorry("Mercedes-Benz", "1234 EE-3", 150, 2000, true);
+
+            var autos = new Auto[] { car, motorbike, lorry };
+
+            foreach (var auto in autos)
+            {
+                auto.GetInfo();
+            }
+
+            Console.WriteLine("Enter the required load capacity.");
+            int clientCarrying = Convert.ToInt32(Console.ReadLine());
+
+            foreach (var auto in autos)
+            {
+                if (clientCarrying <= auto.GetCarryingOfAuto())
+                {
+                    auto.GetInfo();
+                }
+            }
         }
     }
 }
