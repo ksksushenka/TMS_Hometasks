@@ -26,7 +26,7 @@ namespace TMS_Hometasks.Hometask_Lesson7.Auto
 
         public override int GetCarryingOfAuto()
         {
-            if (trailer == true)
+            if (trailer)
             {
                 return CarryingOfAuto * 2;
             }

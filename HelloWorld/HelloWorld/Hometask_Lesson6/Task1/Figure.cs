@@ -29,7 +29,7 @@ namespace TMS_Hometasks.Hometask_Lesson6.Task1
 
         public virtual double GetSquare()
         {
-            return 1;
+            return 0;
         }
     }
 }
