@@ -3,6 +3,7 @@ using TMS_Hometasks.Hometask_Lesson6.Task1;
 using TMS_Hometasks.Hometask_Lesson6.Task2;
 using TMS_Hometasks.Hometask_Lesson7.Transport;
 using TMS_Hometasks.Hometask_Lesson7.Auto;
+using TMS_Hometasks.Hometask_Lesson8;
 
 namespace TMS_Hometasks
 {
@@ -83,70 +84,76 @@ namespace TMS_Hometasks
 
             //Console.WriteLine($"{patient.firstName} {patient.lastName} your doctor is {doctor.post} {doctor.firstName} {doctor.lastName}. {doctor.Treatment()}");
 
-            //Lesson7_task3
-            Transport bus = new Bus("kamenka", 1, "22:30", 20);
-            Transport tram = new Tram("malinovka", 20, "20:00", 35);
-            Transport trolleybus = new Trolleybus("momo", 123, "15:33", 44);
-            Transport undeground = new Underground("oktyabrskaya", 70, "23:59", 101);
+            ////Lesson7_task3
+            //Transport bus = new Bus("kamenka", 1, "22:30", 20);
+            //Transport tram = new Tram("malinovka", 20, "20:00", 35);
+            //Transport trolleybus = new Trolleybus("momo", 123, "15:33", 44);
+            //Transport undeground = new Underground("oktyabrskaya", 70, "23:59", 101);
 
-            var transports = new Transport[] { bus, tram, trolleybus, undeground };
+            //var transports = new Transport[] { bus, tram, trolleybus, undeground };
 
-            foreach (var transport in transports)
-            {
-                transport.GetInfo();
-            }
+            //foreach (var transport in transports)
+            //{
+            //    transport.GetInfo();
+            //}
 
-            Console.WriteLine("\nEnter your destination.");
-            string clientDestination = Console.ReadLine();
+            //Console.WriteLine("\nEnter your destination.");
+            //string clientDestination = Console.ReadLine();
 
-            foreach (var transport in transports)
-            {
-                if (clientDestination == transport.Destination)
-                {
-                    transport.GetInfo();
-                }
-            }
+            //foreach (var transport in transports)
+            //{
+            //    if (clientDestination == transport.Destination)
+            //    {
+            //        transport.GetInfo();
+            //    }
+            //}
 
-            Console.WriteLine("\nEnter the time of departure of the transport in format hh:mm.");
-            DateTime clientTimeOfTransport = DateTime.Parse(Console.ReadLine());
+            //Console.WriteLine("\nEnter the time of departure of the transport in format hh:mm.");
+            //DateTime clientTimeOfTransport = DateTime.Parse(Console.ReadLine());
 
-            foreach (var transport in transports)
-            {
-                DateTime timeOfTransport = DateTime.Parse(transport.TimeOfTransport);
-                if (timeOfTransport >= clientTimeOfTransport)
-                {
-                    transport.GetInfo();
-                }
-            }
+            //foreach (var transport in transports)
+            //{
+            //    DateTime timeOfTransport = DateTime.Parse(transport.TimeOfTransport);
+            //    if (timeOfTransport >= clientTimeOfTransport)
+            //    {
+            //        transport.GetInfo();
+            //    }
+            //}
 
-            bus.PrintTransportType(bus);
-            tram.PrintTransportType(tram);
-            trolleybus.PrintTransportType(trolleybus);
-            undeground.PrintTransportType(undeground);
+            //bus.PrintTransportType(bus);
+            //tram.PrintTransportType(tram);
+            //trolleybus.PrintTransportType(trolleybus);
+            //undeground.PrintTransportType(undeground);
 
-            //Lesson7_task4
+            ////Lesson7_task4
 
-            Auto car = new Car("Mini Cooper", "1234 KK-3", 300, 1650);
-            Auto motorbike = new Motorbike("Harley Davidson", "0001 AA-7", 250, 1250, true);
-            Auto lorry = new Lorry("Mercedes-Benz", "1234 EE-3", 150, 2000, true);
+            //Auto car = new Car("Mini Cooper", "1234 KK-3", 300, 1650);
+            //Auto motorbike = new Motorbike("Harley Davidson", "0001 AA-7", 250, 1250, true);
+            //Auto lorry = new Lorry("Mercedes-Benz", "1234 EE-3", 150, 2000, true);
 
-            var autos = new Auto[] { car, motorbike, lorry };
+            //var autos = new Auto[] { car, motorbike, lorry };
 
-            foreach (var auto in autos)
-            {
-                auto.GetInfo();
-            }
+            //foreach (var auto in autos)
+            //{
+            //    auto.GetInfo();
+            //}
 
-            Console.WriteLine("Enter the required load capacity.");
-            int clientCarrying = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter the required load capacity.");
+            //int clientCarrying = Convert.ToInt32(Console.ReadLine());
 
-            foreach (var auto in autos)
-            {
-                if (clientCarrying <= auto.GetCarryingOfAuto())
-                {
-                    auto.GetInfo();
-                }
-            }
+            //foreach (var auto in autos)
+            //{
+            //    if (clientCarrying <= auto.GetCarryingOfAuto())
+            //    {
+            //        auto.GetInfo();
+            //    }
+            //}
+
+            //Lesson8_task1
+
+            Login.LogIn("sad", "mdlkwq", "mdlks1wq");
+
+            Login.LogIn("sad", "md1lkwq", "md1lkwq");
         }
     }
 }
