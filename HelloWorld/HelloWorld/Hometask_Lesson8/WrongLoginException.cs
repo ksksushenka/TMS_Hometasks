@@ -8,8 +8,8 @@ namespace TMS_Hometasks.Hometask_Lesson8
 {
     internal class WrongLoginException : Exception
     {
-        public WrongLoginException(string message) : base(message) { }
-
         public WrongLoginException() { }
+
+        public WrongLoginException(string message) : base(message) { }
     }
 }

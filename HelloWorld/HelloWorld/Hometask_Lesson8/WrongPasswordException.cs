@@ -10,6 +10,6 @@ namespace TMS_Hometasks.Hometask_Lesson8
     {
         public WrongPasswordException() { }
 
-        public WrongPasswordException(string message) { }
+        public WrongPasswordException(string message) : base(message) { }
     }
 }

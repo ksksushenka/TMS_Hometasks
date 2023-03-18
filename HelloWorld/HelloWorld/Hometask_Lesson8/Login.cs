@@ -10,31 +10,23 @@ namespace TMS_Hometasks.Hometask_Lesson8
     {
         public static bool LogIn(string login, string password, string confirmPassword)
         {
-            try
-            {
                 if (login.Length >= 20 || login.Contains(" "))
                 {
-                    throw new WrongLoginException("Login Error");
+                    throw new WrongLoginException("The login does not match the requirements");
                 }
 
                 if (password.Length >= 20 || password.Contains(" ") || !password.Any(char.IsNumber))
                 {
-                    throw new WrongPasswordException("Password Error");
+                    throw new WrongPasswordException("The password does not match the requirements");
                 }
 
                 if (confirmPassword != password)
                 {
-                    throw new WrongPasswordException("Password Error");
+                    throw new WrongPasswordException("The password and confirmPassword are not equal.");
                 }
 
                 Console.WriteLine("Passed");
                 return true;
-            }
-            catch             
-            {
-                Console.WriteLine("Error");
-                return false;
-            }
         }
     }
 }
