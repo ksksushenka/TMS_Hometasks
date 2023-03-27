@@ -4,6 +4,9 @@ using TMS_Hometasks.Hometask_Lesson6.Task2;
 using TMS_Hometasks.Hometask_Lesson7.Transport;
 using TMS_Hometasks.Hometask_Lesson7.Auto;
 using TMS_Hometasks.Hometask_Lesson8;
+using System.Collections;
+using TMS_Hometasks.Hometask_Lesson10;
+using System.Collections.Generic;
 
 namespace TMS_Hometasks
 {
@@ -149,75 +152,81 @@ namespace TMS_Hometasks
             //    }
             //}
 
-            //Lesson8_task1
+            ////Lesson8_task1
 
-            try
-            {
-                Login.LogIn("sa d", "mdlkwq", "mdlks1wq");      //incorrect login
-            }
-            catch (WrongLoginException wrongLoginEx)
-            {
-                Console.WriteLine(wrongLoginEx.Message);
-            }
-            catch (WrongPasswordException wrongPasswordEx)
-            {
-                Console.WriteLine(wrongPasswordEx.Message);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+            //try
+            //{
+            //    Login.LogIn("sa d", "mdlkwq", "mdlks1wq");      //incorrect login
+            //}
+            //catch (WrongLoginException wrongLoginEx)
+            //{
+            //    Console.WriteLine(wrongLoginEx.Message);
+            //}
+            //catch (WrongPasswordException wrongPasswordEx)
+            //{
+            //    Console.WriteLine(wrongPasswordEx.Message);
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //}
 
-            try
-            {
-                Login.LogIn("sad", "mdnskjdwq", "mdlks1wq");     //incorrect password
-            }
-            catch (WrongLoginException wrongLoginEx)
-            {
-                Console.WriteLine(wrongLoginEx.Message);
-            }
-            catch (WrongPasswordException wrongPasswordEx)
-            {
-                Console.WriteLine(wrongPasswordEx.Message);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+            //try
+            //{
+            //    Login.LogIn("sad", "mdnskjdwq", "mdlks1wq");     //incorrect password
+            //}
+            //catch (WrongLoginException wrongLoginEx)
+            //{
+            //    Console.WriteLine(wrongLoginEx.Message);
+            //}
+            //catch (WrongPasswordException wrongPasswordEx)
+            //{
+            //    Console.WriteLine(wrongPasswordEx.Message);
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //}
 
-            try
-            {
-                Login.LogIn("sad", "md1lkwq", "md1kwq");     //incorrect confirmPassword
-            }
-            catch (WrongLoginException wrongLoginEx)
-            {
-                Console.WriteLine(wrongLoginEx.Message);
-            }
-            catch (WrongPasswordException wrongPasswordEx)
-            {
-                Console.WriteLine(wrongPasswordEx.Message);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+            //try
+            //{
+            //    Login.LogIn("sad", "md1lkwq", "md1kwq");     //incorrect confirmPassword
+            //}
+            //catch (WrongLoginException wrongLoginEx)
+            //{
+            //    Console.WriteLine(wrongLoginEx.Message);
+            //}
+            //catch (WrongPasswordException wrongPasswordEx)
+            //{
+            //    Console.WriteLine(wrongPasswordEx.Message);
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //}
 
-            try
-            {
-                Login.LogIn("sad", "mdlkwq", "mdlkwq");    //correct data
-            }
-            catch (WrongLoginException wrongLoginEx)
-            {
-                Console.WriteLine(wrongLoginEx.Message);
-            }
-            catch (WrongPasswordException wrongPasswordEx)
-            {
-                Console.WriteLine(wrongPasswordEx.Message);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+            //try
+            //{
+            //    Login.LogIn("sad", "mdlkwq", "mdlkwq");    //correct data
+            //}
+            //catch (WrongLoginException wrongLoginEx)
+            //{
+            //    Console.WriteLine(wrongLoginEx.Message);
+            //}
+            //catch (WrongPasswordException wrongPasswordEx)
+            //{
+            //    Console.WriteLine(wrongPasswordEx.Message);
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //}
+
+            Lesson10_Task1.Lesson10_task1();
+
+            Lesson10_Task2.Lesson10_task2();
+
+            Lesson10_Task3.Lesson10_task3();
         }
     }
 }
