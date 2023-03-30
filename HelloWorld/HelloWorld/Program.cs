@@ -5,6 +5,7 @@ using TMS_Hometasks.Hometask_Lesson7.Transport;
 using TMS_Hometasks.Hometask_Lesson7.Auto;
 using TMS_Hometasks.Hometask_Lesson8;
 using System.Collections;
+using TMS_Hometasks.Hometask_Lesson10;
 using TMS_Hometasks.Hometask_Lesson9;
 using System.Collections.Generic;
 
@@ -151,7 +152,8 @@ namespace TMS_Hometasks
             //        auto.GetInfo();
             //    }
             //}
-
+            
+            ////Lesson8_task1
             //Lesson8_task1
 
             //try
@@ -222,6 +224,12 @@ namespace TMS_Hometasks
             //    Console.WriteLine(ex.Message);
             //}
 
+            Lesson10_Task1.Lesson10_task1();
+
+            Lesson10_Task2.Lesson10_task2();
+
+            Lesson10_Task3.Lesson10_task3();
+            
             //Lesson9_0.Lesson9_0_1();
 
             //Lesson9_0.Lesson9_0_2();
