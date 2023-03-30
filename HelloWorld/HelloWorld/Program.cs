@@ -223,12 +223,6 @@ namespace TMS_Hometasks
             //{
             //    Console.WriteLine(ex.Message);
             //}
-
-            Lesson10_Task1.Lesson10_task1();
-
-            Lesson10_Task2.Lesson10_task2();
-
-            Lesson10_Task3.Lesson10_task3();
             
             //Lesson9_0.Lesson9_0_1();
 
@@ -238,33 +232,13 @@ namespace TMS_Hometasks
 
             //Lesson9_1.Lesson9_1_2();
 
-            Lesson9_1.Lesson9_1_3();
+            //Lesson9_1.Lesson9_1_3();
 
+            //Lesson10_Task1.Lesson10_task1();
 
+            //Lesson10_Task2.Lesson10_task2();
 
-
-
-
-
-
-
-
-
-
-
-
-            //var cheeses = new Shipment("Cheese", 10, productionDateOfCheese, 20, 10);
-
-
-            //var setOfProducts = new SetOfGoods("set of dairy products", 30, goods);
-
-            //cheese.GetInfo();
-            //cheese.CheckExpirationDate();
-
-            //cheeses.GetInfo();
-            //cheeses.CheckExpirationDate();
-
-            //setOfProducts.GetInfo();
+            //Lesson10_Task3.Lesson10_task3();
         }
     }
 }
