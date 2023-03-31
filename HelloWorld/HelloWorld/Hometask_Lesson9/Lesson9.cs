@@ -7,10 +7,46 @@ using System.Threading.Tasks;
 
 namespace TMS_Hometasks.Hometask_Lesson9
 {
-    internal class Lesson9_1
+    internal class Lesson9
     {
+        public static void Lesson9_0_1()
+        {
+            ArrayList list = new ArrayList();
+
+            try
+            {
+                object s = list[18];
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                Console.WriteLine($"An ArgumentOutOfRangeException occurred: {ex.Message}.");
+            }
+        }
+
+        public static void Lesson9_0_2()
+        {
+            Dictionary<int, string> numbers = new Dictionary<int, string>()
+            {
+                {1, "One" },
+                {2, "Two" },
+                {3, "Three" },
+                {4, "Four" },
+                {5, "Five" },
+                {6, "Six" },
+                {7, "Seven" },
+                {8, "Eight" },
+                {9, "Nine" },
+                {10, "Ten" }
+            };
+
+            foreach (var number in numbers)
+            {
+                Console.WriteLine(number);
+            }
+        }
+
         public static void Lesson9_1_1()
-        { 
+        {
             DateTime productionDateOfCheese = new DateTime(2023, 3, 20);
             DateTime productionDateOfMilk = new DateTime(2021, 5, 10);
             DateTime productionDateOfButter = new DateTime(2022, 10, 28);
@@ -34,14 +70,14 @@ namespace TMS_Hometasks.Hometask_Lesson9
 
             goods[0].PriceOfProduct = goods[0].PriceOfProduct * 100;
             goods.RemoveAt(2);
-            
+
             Console.WriteLine("After removing the last object.");
 
             foreach (var product in goods)
             {
                 product.GetInfo();
             }
-            
+
             goods.Clear();
         }
 
@@ -61,7 +97,7 @@ namespace TMS_Hometasks.Hometask_Lesson9
 
             List<Product> goods2 = new List<Product>();
 
-            for (int i = goods.Count - 1; i>=0; i--)
+            for (int i = goods.Count - 1; i >= 0; i--)
             {
                 if (goods[i].PriceOfProduct > 300)
                 {
@@ -137,7 +173,7 @@ namespace TMS_Hometasks.Hometask_Lesson9
 
             foreach (var shipment in shipments)  // Convert List to Dictionary
             {
-                if(ship.ContainsKey(shipment.NameOfProduct))
+                if (ship.ContainsKey(shipment.NameOfProduct))
                 {
                     continue;
                 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TMS_Hometasks.Hometask_Lesson7.Auto
+namespace TMS_Hometasks.Hometask_Lesson7.AutoClass
 {
     abstract class Auto
     {
@@ -24,7 +24,6 @@ namespace TMS_Hometasks.Hometask_Lesson7.Auto
         public abstract void GetInfo();
 
         public abstract int GetCarryingOfAuto();
-
 
     }
 }

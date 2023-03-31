@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TMS_Hometasks.Hometask_Lesson7.Transport
+namespace TMS_Hometasks.Hometask_Lesson7.TransportClass
 {
     internal class Underground : Transport
     {
