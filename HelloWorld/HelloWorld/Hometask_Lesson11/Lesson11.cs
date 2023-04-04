@@ -10,21 +10,16 @@ namespace TMS_Hometasks.Hometask_Lesson11
 {
     internal class Lesson11
     {
-        public static void ShowPriceMessage(int price)
-        {
-            Console.WriteLine("Good price.");
-        }
-
         public static void Lesson11_task1()
         {
-            Random random = new Random();
+            var sub1 = new Subscriber("test1@mail.com", 10);
+            var sub2 = new Subscriber("test2@mail.com", 70);
+            var monitor = new PriceMonitor(ShowPrice);
 
-            DelegatePriceMonitor nameDelegate = ShowPrice;
-            Notify += ShowPriceMessage;
+            Notify += sub1.NotifySubscriber;
+            Notify += sub2.NotifySubscriber;
 
-            nameDelegate(random.Next(1, 100));
-
-            PriceMonitor monitor = new PriceMonitor(ShowPrice);
+            monitor.CheckPrice();
         }
     }
 }
