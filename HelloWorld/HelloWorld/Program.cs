@@ -12,6 +12,7 @@ using TMS_Hometasks.Hometask_Lesson7;
 using TMS_Hometasks.Hometask_Lesson6;
 using TMS_Hometasks.Hometask_Lesson5;
 using TMS_Hometasks.Hometask_Lesson11;
+using TMS_Hometasks.Hometask_Lesson12;
 
 namespace TMS_Hometasks
 {
@@ -39,8 +40,18 @@ namespace TMS_Hometasks
             //Lesson10.Lesson10_task1();
             //Lesson10.Lesson10_task2();
             //Lesson10.Lesson10_task3();
+            
+            //Lesson11.Lesson11_task1();
+            
+            Lesson12_Task1.FindFirstWordWithOneLetter();
+            Lesson12_Task1.FindLastWordWithEE();
+            Lesson12_Task1.FindLastWordWithCondition();
+            Lesson12_Task1.FindUniqueValues();
+            Lesson12_Task1.FindFromFifth();
+            Lesson12_Task1.FindShortestLenght();
+            Lesson12_Task1.DictionaryToList();
 
-            Lesson11.Lesson11_task1();
+            Lesson12_Task2.Lesson12_task2();
         }
     }
 }
