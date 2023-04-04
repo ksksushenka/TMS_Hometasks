@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using TMS_Hometasks.Hometask_Lesson7;
 using TMS_Hometasks.Hometask_Lesson6;
 using TMS_Hometasks.Hometask_Lesson5;
+using TMS_Hometasks.Hometask_Lesson11;
 
 namespace TMS_Hometasks
 {
@@ -38,6 +39,8 @@ namespace TMS_Hometasks
             //Lesson10.Lesson10_task1();
             //Lesson10.Lesson10_task2();
             //Lesson10.Lesson10_task3();
+
+            Lesson11.Lesson11_task1();
         }
     }
 }
